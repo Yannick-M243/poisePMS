@@ -9,8 +9,6 @@ public class Manager {
 	String tel;
 	
 	public void getManagerDetails(int projectID) {
-		
-		
 		System.out.println("--------PROJECT MANAGER DETAILS--------");
 		System.out.print("Name : ");
 		name = input.nextLine();
@@ -20,8 +18,9 @@ public class Manager {
 		address = input.nextLine();
 		System.out.print("Tel : ");
 		tel = input.next();
-		
+		input.nextLine();		
 		projectNum = projectID;
+		
 	}
 
 	public int getProjectNum() {

@@ -18,9 +18,9 @@ public class Customer {
 		address = input.nextLine();
 		System.out.print("Tel : ");
 		tel = input.next();
+		input.nextLine();
 		
 		projectNum = projectID;
-		
 	}
 
 	public int getProjectNum() {

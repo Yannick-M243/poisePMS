@@ -19,7 +19,7 @@ public void getArchitectDetails(int projectID) {
 	address = input.nextLine();
 	System.out.print("Tel : ");
 	tel = input.next();
-	
+	input.nextLine();
 	
 	projectNum = projectID;
 }

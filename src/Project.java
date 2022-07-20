@@ -1,7 +1,8 @@
-import java.sql.Date;
+import java.sql.Date;	
 import java.util.Scanner;
 
 public class Project {
+Scanner input = new Scanner(System.in);
 String name;
 String buildingType;
 String buildingAddress;
@@ -13,9 +14,7 @@ Date completionDate;
 int amountPaid;
 
 public void getProjectDetails() {
-	Scanner input = new Scanner(System.in);
 	String date;
-	
 	System.out.println("--------PROJECT DETAILS--------");
 	System.out.print("Name : ");
 	name = input.nextLine();
