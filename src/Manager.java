@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Manager {
+	//Managers Attributes
 	Scanner input = new Scanner(System.in);
 	int projectNum;
 	String name;
@@ -8,6 +9,7 @@ public class Manager {
 	String address;
 	String tel;
 	
+	//Method to get manager details
 	public void getManagerDetails(int projectID) {
 		System.out.println("--------PROJECT MANAGER DETAILS--------");
 		System.out.print("Name : ");
@@ -20,48 +22,7 @@ public class Manager {
 		tel = input.next();
 		input.nextLine();		
 		projectNum = projectID;
-		
-	}
 
-	public int getProjectNum() {
-		return projectNum;
 	}
-
-	public void setProjectNum(int projectNum) {
-		this.projectNum = projectNum;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getTel() {
-		return tel;
-	}
-
-	public void setTel(String tel) {
-		this.tel = tel;
-	}
-	
 	
 }

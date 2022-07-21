@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
 public class Customer {
+	// Customer attributes
 	Scanner input = new Scanner(System.in);
 	int projectNum;
 	String name;
 	String email;
 	String address;
 	String tel;
-	
+
+	// Method to get customer details
 	public void getCustomerDetails(int projectID) {
 		System.out.println("--------PROJECT CUSTOMER DETAILS--------");
 		System.out.print("Name : ");
@@ -19,49 +21,8 @@ public class Customer {
 		System.out.print("Tel : ");
 		tel = input.next();
 		input.nextLine();
-		
+
 		projectNum = projectID;
 	}
 
-	public int getProjectNum() {
-		return projectNum;
-	}
-
-	public void setProjectNum(int projectNum) {
-		this.projectNum = projectNum;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getTel() {
-		return tel;
-	}
-
-	public void setTel(String tel) {
-		this.tel = tel;
-	}
-	
-	
 }
